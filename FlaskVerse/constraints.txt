@@ -4,7 +4,9 @@ blinker==1.8.2
 click==8.1.7
 Flask==3.0.3
 flask-smorest==0.44.0
--e git+https://github.com/Vortexdude/FlaskVerse.git@fdf73a91953eb1014d1f3f807828b298d9231e3f#egg=FlaskVerse&subdirectory=FlaskVerse
+Flask-SQLAlchemy==3.1.1
+-e git+https://github.com/Vortexdude/FlaskVerse.git@86d0d7ab1324d3d37cca74fa4e796cd395f87e3b#egg=FlaskVerse&subdirectory=FlaskVerse
+greenlet==3.0.3
 itsdangerous==2.2.0
 Jinja2==3.1.4
 MarkupSafe==2.1.5
@@ -13,5 +15,8 @@ packaging==24.0
 pytz==2024.1
 PyYAML==6.0.1
 six==1.16.0
+SQLAlchemy==2.0.30
+toml==0.10.2
+typing_extensions==4.12.0
 webargs==8.4.0
 Werkzeug==3.0.3

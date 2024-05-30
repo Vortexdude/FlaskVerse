@@ -20,11 +20,8 @@ class Config(FlaskConfig):
         return self
 
     def from_toml(self, filename, environment=None):
-        filename = (
-            os.path.join(self.root_path, filename)
-            if filename.startswith(os.sep)
-            else filename
-        )
+        from pathlib import Path
+        filename = os.path.join(Path(__file__).parent.parent.parent / 'api' / filename)
         try:
             with open(filename) as toml_file:
                 obj = toml.load(toml_file)
